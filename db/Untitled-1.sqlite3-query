@@ -1,0 +1,13 @@
+-- database: ./students.db
+
+SELECT * FROM students;
+    CREATE TABLE IF NOT EXISTS students (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        age INTEGER,
+        grade TEXT
+);
+SELECT * FROM students;
+INSERT INTO students (name, age, grade) VALUES ('Nodira', 18, 'A');
+INSERT INTO students (name, age, grade) VALUES ('Aida', 19, 'B');
+UPDATE students SET grade = 'A+' WHERE id = 1;
